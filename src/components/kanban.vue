@@ -1,14 +1,5 @@
 <template>
   <div>
-    <vh-modal
-      :show="showModal"
-      title="Thông tin tài khoản"
-      @hide="showModal=false"
-    >
-      <h1>Xin chào</h1>
-      <template #footer>
-      </template>
-    </vh-modal>
     <vh-command
       keyCommand="shift+space"
       @doCommand="AddColumnNew"
@@ -28,7 +19,7 @@
         <div class="vh-kanban-action">
           <vh-label-input
             ref="elAddColumn"
-            modelValue="Thêm mới"
+            modelValue="Add New"
             :emptyWhenEdit="true"
             class="vh-kanban-card-title"
             classEdit="draggable-disabled"
@@ -40,7 +31,7 @@
         <div class="vh-kanban-action">
           <vh-label-input
             :keyCommand="index<10?`ctrl+alt+${index}`:''"
-            :modelValue="index<10?`Thêm mới (ctrl+alt+${index})`:'Thêm mới'"
+            :modelValue="index<10?`Add New (ctrl+alt+${index})`:'Add New'"
             :emptyWhenEdit="true"
             :enterWhenMutil="true"
             :mutil="true"
@@ -73,7 +64,7 @@ export default defineComponent({
     return {
       showModal: false,
       editLast: {},
-      text: "Thêm mới thẻ",
+      text: "Add New thẻ",
       kanban: [
         {
           id: 1,

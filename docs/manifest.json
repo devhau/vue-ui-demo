@@ -1,0 +1,20 @@
+{
+  "index.html": {
+    "file": "assets/index.b09212d3.js",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_vendor.0c710fd0.js"
+    ],
+    "css": [
+      "assets/index.8f0bafe7.css"
+    ],
+    "assets": [
+      "assets/bootstrap-icons.76506e12.woff2",
+      "assets/bootstrap-icons.c3ae486b.woff"
+    ]
+  },
+  "_vendor.0c710fd0.js": {
+    "file": "assets/vendor.0c710fd0.js"
+  }
+}

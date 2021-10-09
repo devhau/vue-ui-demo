@@ -8,8 +8,8 @@ export default defineComponent({
       menu: {
         app: {
           logo: {
-            app: "VAccount",
-            mini: "VAC",
+            app: "VDemo",
+            mini: "VDM",
           },
           version: {
             app: "Version 1.0.2",
@@ -20,8 +20,10 @@ export default defineComponent({
           {
             className: "",
             icon: () => "bi bi-box",
-            title: () => `Bảng điều khiển${new Date()}`,
-            link: "/",
+            title: () => `Dashboard(${(new Date()).toISOString().split('T')[0]})`,
+            router: {
+              name: "Home",
+            },
           },
           {
             className: "",
@@ -34,17 +36,15 @@ export default defineComponent({
           {
             className: "vh-user",
             icon: "bi bi-box",
-            title: "Công việc",
-            link: "",
-            sub: () => {
-              return h("h1", {}, "xin chào");
-            },
+            title: "Work",
           },
           {
             className: "",
             icon: "bi bi-box",
-            title: "Chấm công",
-            link: "",
+            title: "Checkin",
+            router: {
+              name: "Home",
+            },
           },
         ],
         header: {
@@ -52,26 +52,26 @@ export default defineComponent({
             {
               className: "",
               icon: "bi bi-box",
-              title: "Trang chủ",
-              link: "",
+              title: "Home",
+              link: "https://www.hau.xyz",
               sub: [],
             },
             {
               className: "",
               icon: "bi bi-box",
-              title: "Báo cáo",
+              title: "Report",
               link: "",
               sub: [
                 {
                   className: "",
                   icon: "bi bi-box",
-                  title: "Báo cáo doanh thu",
+                  title: "Report 1",
                   link: "",
                 },
                 {
                   className: "",
                   icon: "bi bi-box",
-                  title: "Báo cáo nguồn hàng",
+                  title: "Report 2",
                   link: "",
                 },
               ],
@@ -79,15 +79,15 @@ export default defineComponent({
             {
               className: "",
               icon: "bi bi-box",
-              title: "Đơn hàng",
+              title: "Order",
               link: "",
               sub: [],
             },
             {
               className: "",
               icon: "bi bi-box",
-              title: "Đặt hàng",
-              link: "",
+              title: "Github",
+              link: "https://github.com/devhau/vue-ui-demo",
               sub: [],
             },
           ],
@@ -95,17 +95,17 @@ export default defineComponent({
             {
               className: "",
               icon: "bi bi-box",
-              title: "Tin nhắn",
+              title: "Inbox",
               link: "",
               sub: [],
             },
             {
-              className: "",
+              className: "vh-profile",
               icon: "bi bi-box",
               title: "Profile",
               link: "",
               sub: () => {
-                return h("h1", {}, "xin chào");
+                return h("h1", {}, "Hello");
               },
             },
           ],
@@ -114,14 +114,14 @@ export default defineComponent({
           {
             className: "",
             icon: "bi bi-box",
-            title: "quản lý người dùng",
+            title: "Information",
             link: "",
             sub: [],
           },
           {
             className: "",
             icon: "bi bi-box",
-            title: "quản lý người dùng",
+            title: "Information",
             link: "",
             sub: [],
           },
