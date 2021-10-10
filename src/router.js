@@ -1,8 +1,10 @@
 
 import { createRouter, createWebHashHistory } from "vue-router"
 
-import HomeComponent from './components/kanban.vue';
-import GanttComponent from './components/gantt.vue';
+import  HomeComponent   from './component/kanban.vue';
+import  GanttComponent   from './component/gantt.vue';
+import  AccordionComponent   from './component/accordion.vue';
+import  AlertComponent   from './component/alert.vue';
 
 const routes = [
     {
@@ -14,6 +16,16 @@ const routes = [
         path: '/gantt',
         name: 'Gantt',
         component: GanttComponent,
+    },
+    {
+        path: '/accordion',
+        name: 'Accordion',
+        component: AccordionComponent,
+    },
+    {
+        path: '/alert',
+        name: 'Alert',
+        component: AlertComponent,
     },
 ];
 const router = createRouter({

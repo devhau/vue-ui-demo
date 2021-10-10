@@ -2,17 +2,17 @@
   <vh-gantt
     :source="data"
     :coloumns="dataColumns"
-    :startDate="startdate"
-    :endDate="enddate"
+    :startDate="startDate"
+    :endDate="endDate"
   ></vh-gantt>
 </template>
 <script>
-import { formatDate, addDays } from '../utils/date.util';
+import { formatDate, addDays } from './../utils/date.util';
 export default {
   data() {
     return {
-      startdate: new Date(),
-      enddate: addDays(new Date(), 30),
+      startDate: new Date(),
+      endDate: addDays(new Date(), 8),
       dataColumns: [
         {
           field: 'name',
@@ -44,28 +44,28 @@ export default {
           due: '5'
         },
         {
-          name: 'Task 1',
-          date: addDays(new Date(), -1),
+          name: 'Task 2',
+          date: addDays(new Date(), 1),
           status: 'Test',
           due: 50
         },
         {
-          name: 'Task 1',
-          date: '',
+          name: 'Task 3',
+          date: addDays(new Date(), 1),
           status: 'done',
           due: 15
         },
         {
-          name: 'Task 1',
-          date: '',
+          name: 'Task 4',
+          date: addDays(new Date(), 4),
           status: 'done',
-          due: 50
+          due: 53
         },
         {
-          name: 'Task 1',
-          date: '',
+          name: 'Task 6',
+          date: addDays(new Date(), 3),
           status: 'done',
-          due: 50
+          due: 59
         },
         {
           name: 'Task 1',
@@ -99,13 +99,13 @@ export default {
         },
         {
           name: 'TTask 1',
-          date: '',
+          date: addDays(new Date(), 2),
           status: 'done',
           due: '5'
         },
         {
           name: 'Tassddf',
-          date: '',
+          date: addDays(new Date(), 4),
           status: 'Test',
           due: ''
         },
@@ -159,12 +159,12 @@ export default {
         },
         {
           name: 'TTask 1',
-          date: '',
+          date: addDays(new Date(), 4),
           status: 'done',
           due: '5'
         },
         {
-          name: 'tin tài khoản',
+          name: 'Task1234',
           date: '',
           status: 'Test',
           due: ''

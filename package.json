@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@devhau/vue-ui": "^1.0.5",
+    "@devhau/vue-ui": "^1.0.6",
     "@popperjs/core": "^2.10.2",
     "@vue/compiler-sfc": "^3.2.20",
     "bootstrap": "^5.1.3",

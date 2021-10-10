@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent, h } from "vue";
-
+import { formatDate } from "./utils/date.util";
 export default defineComponent({
   name: "HomePage",
   data() {
@@ -20,7 +20,7 @@ export default defineComponent({
           {
             className: "",
             icon: () => "bi bi-box",
-            title: () => `Dashboard(${(new Date()).toISOString().split('T')[0]})`,
+            title: () => `Dashboard(${formatDate(new Date())})`,
             router: {
               name: "Home",
             },
@@ -36,14 +36,17 @@ export default defineComponent({
           {
             className: "vh-user",
             icon: "bi bi-box",
-            title: "Work",
+            title: "Accordion",
+            router: {
+              name: "Accordion",
+            },
           },
           {
             className: "",
             icon: "bi bi-box",
-            title: "Checkin",
+            title: "Alert",
             router: {
-              name: "Home",
+              name: "Alert",
             },
           },
         ],

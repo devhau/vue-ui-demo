@@ -64,7 +64,6 @@ export default defineComponent({
     return {
       showModal: false,
       editLast: {},
-      text: "Add New thẻ",
       kanban: [
         {
           id: 1,
