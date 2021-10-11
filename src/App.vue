@@ -1,6 +1,6 @@
-<script lang="ts">
+<script>
 import { defineComponent, h } from "vue";
-import { formatDate } from "./utils/date.util";
+import { formatDate } from "@devhau/utils/src/date.util";
 export default defineComponent({
   name: "HomePage",
   data() {

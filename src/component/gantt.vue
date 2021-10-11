@@ -7,7 +7,7 @@
   ></vh-gantt>
 </template>
 <script>
-import { formatDate, addDays } from './../utils/date.util';
+import { formatDate, addDays } from "@devhau/utils/src/date.util";
 export default {
   data() {
     return {

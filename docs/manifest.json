@@ -1,10 +1,10 @@
 {
   "index.html": {
-    "file": "assets/index.0109025b.js",
+    "file": "assets/index.74aab27b.js",
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_vendor.474e4b92.js"
+      "_vendor.cf72051d.js"
     ],
     "css": [
       "assets/index.7e13b500.css"
@@ -14,7 +14,7 @@
       "assets/bootstrap-icons.c3ae486b.woff"
     ]
   },
-  "_vendor.474e4b92.js": {
-    "file": "assets/vendor.474e4b92.js"
+  "_vendor.cf72051d.js": {
+    "file": "assets/vendor.cf72051d.js"
   }
 }
